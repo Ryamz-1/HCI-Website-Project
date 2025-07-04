@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Contact - Hope For All</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Hope For All</h1>
+    <nav>
+      <a href="index.html">Home</a> |
+      <a href="about.html">About</a> |
+      <a href="services.html">Services</a> |
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Contact Us</h2>
+    <p>If you have questions or would like to support us, fill out the form below and we’ll get back to you.</p>
+
+    <form onsubmit="return showThanks()">
+      <label for="name">Name:</label><br>
+      <input type="text" id="name" required><br><br>
+
+      <label for="email">Email:</label><br>
+      <input type="email" id="email" required><br><br>
+
+      <label for="message">Message:</label><br>
+      <textarea id="message" rows="5" required></textarea><br><br>
+
+      <input type="submit" value="Send Message">
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Hope For All</p>
+  </footer>
+
+  <script>
+    function showThanks() {
+      alert("Thank you for reaching out! We’ll respond soon.");
+      return false; // Prevents page from reloading
+    }
+  </script>
+</body>
+</html>
